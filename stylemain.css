@@ -1,0 +1,568 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  background: #001f3f;
+  color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  z-index: 10;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent);
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 30px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+nav ul li a {
+  font-family: "Poppins";
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s;
+}
+
+nav ul li a:hover {
+  opacity: 0.7;
+}
+
+/*BANNER*/
+.banner {
+  position: relative;
+  height: 1000px;
+  min-height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(img/backgroundbt.png);
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.titulo-banner {
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  padding: 20px;
+}
+
+.titulo-banner h1 {
+  font-family: "Playfair Display";
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+}
+
+/*NOTICIAS*/
+.noticias {
+  background-image: url(img/Ultimas\ noticias\ \(1\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1700px;
+}
+
+.titulo-news {
+  font-family: "Playfair Display";
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  padding: 20px;
+  font-size: 100px;
+}
+
+.container {
+  padding: 200px 0px 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  height: 800px;
+}
+
+.variant {
+  display: flex;
+  justify-content: center;
+}
+
+.card-rios {
+  display: flex;
+  transition: 0.4s ease;
+}
+
+.card-rios:hover {
+  filter: brightness(0.7);
+  transform: scale(1.03);
+}
+
+.card-lagos {
+  display: flex;
+  transition: 0.4s ease;
+}
+
+.card-lagos:hover {
+  filter: brightness(0.7);
+  transform: scale(1.03);
+}
+
+.card-mares {
+  display: flex;
+  transition: 0.4s ease;
+}
+
+.card-mares:hover {
+  filter: brightness(0.7);
+  transform: scale(1.03);
+}
+
+.card-variedades {
+  display: flex;
+  transition: 0.4s ease;
+}
+
+.card-variedades:hover {
+  filter: brightness(0.7);
+  transform: scale(1.03);
+}
+
+/*SOBRE NÓS*/
+.sobrenos {
+  display: flex;
+  background-image: url(img/sobre\ nós.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1700px;
+}
+
+.titulo-sobrenos {
+  font-family: "Playfair Display";
+  transform: translate(-45px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 45px;
+}
+
+.text-sobrenos {
+  font-family: "Poppins";
+  display: flex;
+  background-color: #022864;
+  border-radius: 15px;
+  height: 620px;
+  width: 500px;
+  padding: 10px 15px 0px 15px;
+}
+
+.text-sobrenos p {
+  font-size: 32px;
+  text-align: center;
+}
+
+.img-sobrenos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-sobrenos {
+  display: flex;
+  padding: 400px 200px 0px;
+  gap: 250px;
+  justify-content: space-evenly;
+}
+
+/*OBJETIVO*/
+.objetivo {
+  display: flex;
+  background-image: url(img/Objetivo\ \(1\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1700px;
+}
+
+.titulo-objetivo {
+  font-family: "Playfair Display";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 45px;
+  margin-top: 200px;
+}
+
+.text-objetivo {
+  font-family: "Poppins";
+  display: flex;
+  background-color: #022864;
+  border-radius: 15px;
+  height: 650px;
+  width: 500px;
+  padding: 10px 10px 0px 10px;
+}
+
+.text-objetivo p {
+  font-size: 31px;
+  text-align: center;
+}
+
+.img-objetivo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-objetivo {
+  display: flex;
+  padding: 400px 200px 0px;
+  gap: 250px;
+  justify-content: space-evenly;
+}
+
+.siganos {
+  display: flex;
+  background-color: #022864;
+  border-radius: 15px;
+  padding: 15px;
+  height: 85px;
+  width: 350px;
+  max-width: 100%;
+  margin-top: 150px;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+
+.siganos a {
+  font-family: "Playfair Display";
+  font-size: 35px;
+  font-weight: 200;
+}
+
+.siganos-icones {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 35px;
+}
+
+.insta {
+  transition: 0.2s ease;
+}
+
+.insta:hover {
+  scale: 1.1;
+}
+
+.twitter {
+  transition: 0.2s ease;
+}
+
+.twitter:hover {
+  scale: 1.1;
+}
+
+.youtube {
+  transition: 0.2s ease;
+}
+
+.youtube:hover {
+  scale: 1.1;
+}
+
+.siganos-icones a {
+  color: white;
+  text-decoration: none;
+}
+
+/*FOOTER*/
+.footer {
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: url(img/footer_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 1100px;
+  padding: 100px;
+}
+
+.rodape {
+  display: flex;
+  align-items: end;
+}
+
+.logo-rodape {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.lista-rodape {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  padding: 0px 200px 0px 200px;
+}
+
+.lista-rodape ul {
+  list-style: none;
+  text-align: center;
+}
+
+.lista-rodape h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.lista-rodape a {
+  color: white;
+  font-weight: 300;
+  transition: 0.3s ease;
+}
+
+.lista-rodape a:hover {
+  opacity: 0.5;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 15px;
+}
+
+.emailbox {
+  background-color: black;
+  border: 4px solid;
+  border-color: white;
+  padding: 15px;
+  border-radius: 50px;
+  color: gray;
+}
+
+.emailtext {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 15px;
+}
+
+
+@media (max-width: 390px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .banner {
+    height: 700px;
+    min-height: auto;
+  }
+
+  .titulo-banner h1 {
+    font-size: 38px;
+    max-width: 100%;
+  }
+
+  .noticias {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .titulo-news {
+    font-size: 50px;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 80px 20px 40px;
+    gap: 25px;
+  }
+
+  .container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .sobrenos {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .container-sobrenos {
+    flex-direction: column;
+    padding: 150px 20px 50px;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .titulo-sobrenos {
+    transform: none;
+    font-size: 32px;
+  }
+
+  .text-sobrenos {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .text-sobrenos p {
+    font-size: 20px;
+  }
+
+  .img-sobrenos img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .objetivo {
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .container-objetivo {
+    flex-direction: column;
+    padding: 150px 20px 50px;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .titulo-objetivo {
+    display: flex;
+    font-size: 32px;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .text-objetivo {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .text-objetivo p {
+    font-size: 20px;
+  }
+
+  .img-objetivo img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .siganos {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .siganos a {
+    font-size: 28px;
+  }
+
+  .footer {
+    min-height: 200px;
+    padding: 40px 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: black;
+  }
+
+  .rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .logo-rodape {
+    padding-left: 0;
+    margin-top: 100px;
+  }
+
+  .lista-rodape {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0;
+  }
+
+  .lista-rodape h2 {
+    font-size: 15px;
+  }
+
+  .email {
+    width: 100%;
+    max-width: 350px;
+    align-items: center;
+  }
+
+  .emailbox {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
